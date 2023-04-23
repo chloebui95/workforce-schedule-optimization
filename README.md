@@ -1,4 +1,5 @@
 # Workforce scheduling optimization
+Author: Chloe Bui
 
 Within the context of workforce management, this notebook showcases a key exercise to develop a workforce schedule with optimal utilization of resources.
 
@@ -24,14 +25,13 @@ First we build a scheduling table showing:
 
 ## Formulation
 
-*Model formulation*                            
-$$
-\begin{align}
+*Model formulation*    
+
+$$\begin{align}
 \text{Minimize}   & \sum_{j=0}^{\infty} {w_j y_j} \\
 \text{subject to} & \sum_{j=0}^{\infty} {a_{jt} y_j} >= d_t \text{ with } t = 1, \ldots, T \\
                   & y_j >= 0 \text{ and integer } j = 1, \ldots, n
-\end{align}
-$$
+\end{align}$$
 
 *Input parameter*
 
